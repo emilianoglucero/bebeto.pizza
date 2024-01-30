@@ -1,0 +1,86 @@
+[27-Jan-2018 20:38:07 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 13
+[28-Jan-2018 06:32:27 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 13
+[28-Jan-2018 09:10:29 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 13
+[28-Jan-2018 20:13:26 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 13
+[28-Jan-2018 22:30:39 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 13
+[28-Jan-2018 23:22:28 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 13
+[28-Jan-2018 23:22:29 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 13
+[29-Jan-2018 21:03:05 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user ' bebeeeod_emilianoglucero'@'server199.web-hosting.com' (using password: YES)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(13): PDO->__construct('mysql:host=serv...', ' bebeeeod_emili...', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 13
+[29-Jan-2018 21:15:03 America/New_York] PHP Parse error:  syntax error, unexpected 'var' (T_VAR), expecting ',' or ';' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 7
+[29-Jan-2018 21:15:24 America/New_York] PHP Parse error:  syntax error, unexpected ';' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 14
+[29-Jan-2018 21:16:43 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 2 "No such file or directory"' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:14
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(14): PDO->__construct('mysql:host=serv...', ' bebeeeod_emili...', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 14
+[29-Jan-2018 21:17:10 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 2 "No such file or directory"' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:14
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(14): PDO->__construct('mysql:host=serv...', ' bebeeeod_emili...', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 14
+[29-Jan-2018 21:19:01 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2013] Lost connection to MySQL server at 'reading initial communication packet', system error: 2 "No such file or directory"' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:14
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(14): PDO->__construct('mysql:host=serv...', ' bebeeeod_emili...', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 14
+[29-Jan-2018 21:23:47 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user ' bebeeeod_emilianoglucero'@'localhost' (using password: YES)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:14
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(14): PDO->__construct('mysql:host=loca...', ' bebeeeod_emili...', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 14
+[29-Jan-2018 22:15:02 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user ' bebeeeod_emilianoglucero'@'localhost' (using password: YES)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(13): PDO->__construct('mysql:host=loca...', ' bebeeeod_emili...', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 13
+[29-Jan-2018 22:18:20 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user ' bebeeeod_emilianoglucero'@'localhost' (using password: YES)' in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php:14
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/zarandraca/Conexion.php(14): PDO->__construct('mysql:host=loca...', ' bebeeeod_emili...', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/zarandraca/elflacovsbeltran.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/zarandraca/Conexion.php on line 14

@@ -1,0 +1,24 @@
+ body {
+    background: #FFB6C1;
+    margin: 0;
+    padding: 0;
+
+    font-family: comic sans ms;
+    font-size: 43px;
+    color: lime;
+}
+#screen {
+	margin: 0 auto;
+	max-height:500px;
+	max-width:500px;
+	position: relative;
+	overflow: hidden;
+	/*margin-top: 100px;
+	margin-left: 400px;*/
+            
+}
+
+.main-score {
+	margin: 70px;
+	font-family: 'Dawning of a New Day', cursive;
+}

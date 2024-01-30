@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>♡♡♡♡</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+</head>
+
+<body style="margin: 0px; overflow: hidden;">
+    
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false">
+        
+        <a-assets>
+            <!--<a-asset-item id="cake-obj" src="/bebeto/pages/ar/model.obj"></a-asset-item>
+            <a-asset-item id="cake-mtl" src="/bebeto/pages/ar/materials.mtl"></a-asset-item>-->
+            <a-asset-item id="abejita" src="pages/poesia/models/ojo/bola2.gltf"></a-asset-item>
+            <a-asset-item id="ultra" src="https://cdn.rawgit.com/HackyRoot/A-Frame-Examples/e4751baf/Happy_Birthday/assets/ultra.json"></a-asset-item>
+        </a-assets>
+
+        <a-marker-camera preset="hiro">
+            <!--<a-obj-model src="#cake-obj" mtl="#cake-mtl"></a-obj-model>-->    
+            <a-entity gltf-model="#abejita" scale="0.5 0.5 0.5 " position="-1 -0.3 -1" rotation="0 65 0"></a-entity>>
+                
+        
+
+        </a-marker-camera>
+    </a-scene>
+</body>
+</html>

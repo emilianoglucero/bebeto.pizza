@@ -1,0 +1,20 @@
+[05-Feb-2018 21:49:26 America/New_York] PHP Notice:  Undefined index: photo in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 9
+[05-Feb-2018 21:49:26 America/New_York] PHP Notice:  Undefined variable: photoName in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 26
+[05-Feb-2018 21:49:56 America/New_York] PHP Notice:  Undefined index: photo in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 9
+[05-Feb-2018 21:49:56 America/New_York] PHP Notice:  Undefined variable: photoName in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 26
+[05-Feb-2018 22:08:27 America/New_York] PHP Notice:  Undefined index: photo in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 9
+[05-Feb-2018 22:08:27 America/New_York] PHP Notice:  Undefined variable: photoName in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 26
+[05-Feb-2018 22:09:21 America/New_York] PHP Notice:  Undefined index: photo in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 9
+[05-Feb-2018 22:09:21 America/New_York] PHP Notice:  Undefined variable: photoName in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 26
+[05-Feb-2018 22:12:23 America/New_York] PHP Notice:  Undefined variable: photoName in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 26
+[05-Feb-2018 22:19:43 America/New_York] PHP Notice:  Undefined index: photo in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 9
+[05-Feb-2018 22:19:43 America/New_York] PHP Notice:  Undefined variable: photoName in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 26
+[07-Feb-2018 23:56:19 America/New_York] PHP Notice:  Undefined index: photo in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 9
+[07-Feb-2018 23:56:19 America/New_York] PHP Notice:  Undefined variable: photoName in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 26
+[14-Feb-2018 07:41:37 UTC] PHP Warning:  file_put_contents(/home/bebeeeod/public_html/bebetono/pages/dibuja/photos/1518594097.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 17
+[14-Feb-2018 07:44:48 UTC] PHP Warning:  file_put_contents(/home/bebeeeod/public_html/bebetono/pages/dibuja/photos/1518594288.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 17
+[15-Feb-2018 04:37:59 UTC] PHP Warning:  file_put_contents(/home/bebeeeod/public_html/bebetono/pages/dibuja/photos/1518669479.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 17
+[16-Feb-2018 06:50:51 UTC] PHP Warning:  file_put_contents(/home/bebeeeod/public_html/public_html/pages/pages/dibuja/photos/1518763851.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 17
+[16-Feb-2018 06:51:36 UTC] PHP Warning:  file_put_contents(/home/bebeeeod/public_html/public_html/pages/pages/dibuja/photos/1518763896.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 17
+[16-Feb-2018 07:00:22 UTC] PHP Warning:  file_put_contents(/home/bebeeeod/public_htmlpages/dibuja/photos/1518764422.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 17
+[16-Feb-2018 07:00:33 UTC] PHP Warning:  file_put_contents(/home/bebeeeod/public_htmlpages/dibuja/photos/1518764433.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 17

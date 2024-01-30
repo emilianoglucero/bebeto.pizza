@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Lau Gonzalez</title>
+    <meta name="description" content="letras afuera" />
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.1/aframe/build/aframe-ar.js"></script>
+    <!--<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>-->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.1.3/dist/aframe-particle-system-component.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114029730-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-114029730-1');
+    </script>
+  </head>
+  <body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false"
+    renderer="colorManagement: true;">
+
+    <a-assets>
+
+      <a-asset-item id="knife" src="pages/poesia/models/knife-lau/scene.gltf"></a-asset-item>
+      <a-asset-item id="knife1" src="pages/poesia/models/knife-lau/scene.gltf"></a-asset-item>
+      <a-asset-item id="knife2" src="pages/poesia/models/knife-lau/scene.gltf"></a-asset-item>
+      <a-asset-item id="knife3" src="pages/poesia/models/knife-lau/scene.gltf"></a-asset-item>
+      <img id="lau" src="pages/poesia/img/lau.png">
+      
+    </a-assets>
+
+      <a-marker-camera preset="hiro">
+
+        <a-entity particle-system="preset: snow; color: #000000; size: 3" position="0 0 -10"></a-entity>
+        <a-image src="#lau" width="3" height="3"></a-image>
+        <a-entity gltf-model="#knife" scale="0.5 0.5 0.5" rotation="0 90 0" position="1 2 0"></a-entity>
+        <a-entity gltf-model="#knife" scale="0.5 0.5 0.5" rotation="0 30 0" position="3 1 0"></a-entity>
+        <a-entity gltf-model="#knife" scale="0.5 0.5 0.5" rotation="0 -30 0" position="-3 1 0"></a-entity>
+        <a-entity gltf-model="#knife" scale="0.5 0.5 0.5" rotation="0 80 0" position="-1 2 0"></a-entity>
+
+        <a-entity position="0 -1.6 0" scale="4 4 4" text="font: pages/poesia/yantramanavnew.fnt; color: #f7faff; align: center; value:@l.gonzalez.rock"></a-entity>
+
+      </a-marker-camera>
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,549 @@
+body {
+  margin: 0;
+  background: #000; 
+  font-family: comic sans ms;
+  color: lightblue;
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('../img/photo.JPG') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+/*preloading gif https://stackoverflow.com/questions/22131821/how-can-i-display-a-loading-gif-until-an-entire-html-page-has-been-loaded*/
+#loading {
+    position: absolute; width: 100%; height: 100%; background: url('../img/baby.gif') no-repeat center center;
+}
+
+#ismobile {
+    /*background-color: red;*/
+    text-align: center;
+}
+
+#mobile-content {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#mobile-title {
+    padding-top: 30px;
+}
+
+#main-titles {
+    font-size: 19px;
+}
+
+#frase-2 {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+#frase-3 {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+}
+
+#frase-4 {
+    position: absolute;
+    top: 8%;
+    left: 29%;
+}
+
+#frase-5 {
+    position: absolute;
+    top: 10%;
+    left: 41%;
+}
+
+#frase-6 {
+    position: absolute;
+    top: 6%;
+    left: 69%;
+}
+
+#frase-7 {
+    position: absolute;
+    top: 5%;
+    left: 84%;
+}
+
+#frase-8 {
+    position: absolute;
+    top: 10%;
+    left: 95%;
+}
+
+#frase-9 {
+    position: absolute;
+    top: 16%;
+    left: 4%;
+}
+
+#frase-10 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+#frase-11 {
+    position: absolute;
+    top: 18%;
+    left: 44%;
+}
+
+#frase-12 {
+    position: absolute;
+    top: 15%;
+    left: 64%;
+}
+
+#frase-13 {
+    position: absolute;
+    top: 16%;
+    left: 85%;
+}
+
+#frase-14 {
+    position: absolute;
+    top: 19%;
+    left: 93%;
+}
+
+#frase-15 {
+    position: absolute;
+    top: 250px;
+    left: 20px;
+}
+
+#frase-16 {
+    position: absolute;
+    top: 260px;
+    left: 2px;
+}
+
+#frase-17 {
+    position: absolute;
+    top: 300px;
+    left: 140px;
+}
+
+#frase-18 {
+    position: absolute;
+    top: 330px;
+    left: 120px;
+}
+
+#frase-19 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+#frase-20 {
+    position: absolute;
+    top: 380px;
+    left: 190px;
+}
+
+#frase-21 {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+}
+
+#frase-22 {
+    position: absolute;
+    top: 420px;
+    left: 20px;
+}
+
+#frase-23 {
+    position: absolute;
+    top: 450px;
+    left: 70px;
+}
+
+#frase-24 {
+    position: absolute;
+    top: 470px;
+    left: 100px;
+}
+
+#frase-25 {
+    position: absolute;
+    top: 490px;
+    left: 120px;
+}
+
+#frase-26 {
+    position: absolute;
+    top: 500px;
+    left: 160px;
+}
+
+#frase-27 {
+    position: absolute;
+    top: 510px;
+    left: 50px;
+}
+
+#frase-28 {
+    position: absolute;
+    top: 165px;
+    left: 220px;
+}
+
+#frase-29 {
+    position: absolute;
+    top: 195px;
+    left: 440px;
+}
+
+#frase-31 {
+    position: absolute;
+    top: 190px;
+    left: 590px;
+}
+
+#frase-32 {
+    position: absolute;
+    top: 170px;
+    left: 660px;
+}
+
+#frase-33 {
+    position: absolute;
+    top: 190px;
+    left: 770px;
+}
+
+#frase-34 {
+    position: absolute;
+    top: 160px;
+    left: 840px;
+}
+
+#frase-35 {
+    position: absolute;
+    top: 115px;
+    left: 860px;
+}
+
+#frase-36 {
+    position: absolute;
+    top: 145px;
+    left: 1042px;
+}
+
+#frase-37 {
+    position: absolute;
+    top: 300px;
+    left: 40px;
+}
+
+#frase-38 {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+}
+
+#frase-39 {
+    position: absolute;
+    top: 280px;
+    left: 600px;
+}
+
+#frase-40 {
+    position: absolute;
+    top: 240px;
+    left: 800px;
+}
+
+#frase-41 {
+    position: absolute;
+    top: 300px;
+    left: 1000px;
+}
+
+#frase-42 {
+    position: absolute;
+    top: 400px;
+    left: 60px;
+}
+
+#frase-43 {
+    position: absolute;
+    top: 400px;
+    left: 497px;
+}
+
+#frase-44 {
+    position: absolute;
+    top: 400px;
+    left: 760px;
+}
+
+#frase-45 {
+    position: absolute;
+    top: 400px;
+    left: 1043px;
+}
+
+#frase-46 {
+    position: absolute;
+    top: 500px;
+    left: 94px;
+}
+
+#frase-47 {
+    position: absolute;
+    top: 510px;
+    left: 290px;
+}
+
+#frase-48 {
+    position: absolute;
+    top: 510px;
+    left: 600px;
+}
+#frase-49 {
+    position: absolute;
+    top: 510px;
+    left: 745px;
+}
+#frase-50 {
+    position: absolute;
+    top: 510px;
+    left: 986px;
+}
+#frase-51 {
+    position: absolute;
+    top: 610px;
+    left: 86px;
+}
+#frase-52 {
+    position: absolute;
+    top: 610px;
+    left: 986px;
+}
+
+#frase-53 {
+    position: absolute;
+    top: 90%;
+    left: 15%;
+}
+#frase-54 {
+    position: absolute;
+    top: 95%;
+    left: 40%;
+}
+#frase-55 {
+    position: absolute;
+    top: 85%;
+    left: 60%;
+}
+#frase-56 {
+    position: absolute;
+    top: 95%;
+    left: 80%;
+}
+#frase-57 {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+}
+
+#frase-58 {
+    position: absolute;
+    top: 97%;
+    left: 18%;
+}
+
+#frase-59 {
+    position: absolute;
+    top: 90%;
+    left: 75%;
+}
+
+#fraseposta-1 {
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    color: darkorchid;
+}
+#fraseposta-2 {
+    position: absolute;
+    top: 30%;
+    left: 85%;
+    color: deeppink;
+}
+#fraseposta-3 {
+    position: absolute;
+    top: 47%;
+    left: 40%;
+    color: floralwhite;
+}
+#fraseposta-4 {
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    color: cyan;
+}
+#fraseposta-5 {
+    position: absolute;
+    top: 90%;
+    left: 18%;
+    color: #d16ad8;
+}
+
+#fraseposta-6 {
+    position: absolute;
+    top: 17%;
+    left: 65%;
+    color: lightblue;
+    font-size: 18px;
+}
+
+#fraseposta-7 {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    color: cornflowerblue;
+}
+
+#fraseposta-8 {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    color: burlywood;
+}
+#fraseposta-9 {
+    position: absolute;
+    top: 89%;
+    left: 70%;
+    color: darkorange;
+}
+#fraseposta-10 {
+	position: absolute;
+    top: 125%;
+    left: 90%;
+    color: tomato;
+    font-size: 15px;
+}
+#fraseposta-11 {
+	position: absolute;
+    top: 120%;
+    left: 10%;
+    color: brown;
+    font-size: 15px;
+}
+#fraseposta-12 {
+	position: absolute;
+    top: 110%;
+    left: 50%;
+    color: forestgreen;
+}
+#img-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#img-2 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+#img-3 {
+    position: absolute;
+    top: 14%;
+    left: 9%;
+}
+#img-4 {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+#img-5 {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+}
+#img-6 {
+    position: absolute;
+    top: 7%;
+    left: 70%;
+}
+#img-7 {
+    position: absolute;
+    top: 90%;
+    left: 15%;
+}
+#img-8 {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+#img-9 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+#img-10 {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+#img-11 {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+}
+#img-12 {
+    position: absolute;
+    top: 7%;
+    left: 90%;
+}
+#img-13 {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+}
+#img-14 {
+    position: absolute;
+    top: 1%;
+    left: 55%;
+}
+#img-15 {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

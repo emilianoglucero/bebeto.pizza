@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Marianella Monzoni - Hábito de culpa</title>
+    <meta name="description" content="letras afuera" />
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.1/aframe/build/aframe-ar.js"></script>
+    <!--<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>-->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.1.3/dist/aframe-particle-system-component.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114029730-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-114029730-1');
+    </script>
+  </head>
+  <body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false"
+    renderer="colorManagement: true;">
+
+    <a-assets>
+
+      <img id="mar" src="pages/poesia/img/mar.jpeg">
+      <img id="mar1" src="pages/poesia/img/mar.jpeg">
+      <img id="mar2" src="pages/poesia/img/mar.jpeg">
+      <img id="mar3" src="pages/poesia/img/mar.jpeg">
+      <img id="mar4" src="pages/poesia/img/mar.jpeg">
+      <img id="mar5" src="pages/poesia/img/mar.jpeg">
+      <img id="mar6" src="pages/poesia/img/mar.jpeg">
+
+      <a-asset-item id="broken" src="pages/poesia/models/broken-mar/scene.gltf"></a-asset-item>
+      
+    </a-assets>
+
+      <a-marker-camera preset="hiro">
+
+        <a-entity position="0 2.25 -15" particle-system="preset: rain; color: #230fff; size: 3"></a-entity>
+        
+        <a-image src="#mar" width="3" height="3"></a-image>
+        <a-image src="#mar1" position="0.5 2 -1.2" width="1.5" height="1.5"></a-image>
+        <a-image src="#mar2" position="2 2 -1" width="2" height="1.5"></a-image>
+        <a-image src="#mar3" position="3 1 -1" width="3" height="1"></a-image>
+        <a-image src="#mar4" position="3 0 -1.3" width="6" height="6"></a-image>
+
+        <a-image src="#mar5" position="-3 0 -1.1" width="5" height="5"></a-image>
+        <a-image src="#mar6" position="-2.1 1.5 -0.9" width="4" height="3"></a-image>
+
+        <a-entity gltf-model="#broken" scale="0.1 0.1 0.1" rotation="0 -45 0" position="0 3 -1"></a-entity>
+
+        <a-entity position="0 -1.9 0" scale="4 4 4" text="font: pages/poesia/yantramanavnew.fnt; color: #f7faff; value:@marine.mo9n"></a-entity>
+        
+        
+
+
+
+      </a-marker-camera>
+    </a-scene>
+  </body>
+</html>

@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <base href="https://bebeto.pizza/pages/voca/singoyete.html"/>
+		<title>¯\_(ツ)_/¯</title>
+		<link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta charset="utf-8">
+		<style>
+
+			body {
+				font-family: 'Comic Sans MS';
+				background-color: aquamarine;
+				color:  violet;
+				margin: 0px auto;
+				max-width: 1150px;
+			}
+			
+            #loadingVoka {
+                position: absolute; 
+                width: 100%; 
+                height: 100%; 
+                background: url('media/loadingVoka.gif') no-repeat center center;
+            }
+            
+            #img-voka-1 {
+                position: absolute;
+                top: 10%;
+                left: 14%;
+            }
+            #img-voka-2 {
+                position: absolute;
+                top: 65%;
+                left: 9%;
+            }
+            #img-voka-3 {
+                position: absolute;
+                top: 30%;
+                left: 11%;
+            }
+            #img-voka-4 {
+                position: absolute;
+                top: 130%;
+                left: 59%;
+            }
+            #img-voka-5 {
+                position: absolute;
+                top: 130%;
+                left: 70%;
+            }
+            #img-voka-6 {
+                position: absolute;
+                top: 150%;
+                left: 80%;
+            }
+            #img-voka-7 {
+                position: absolute;
+                top: 10%;
+                left: 50%;
+            }
+            #img-voka-8 {
+                position: absolute;
+                top: 120%;
+                left: 100%;
+            }
+            #img-voka-9 {
+                position: absolute;
+                top: 40%;
+                left: 80%;
+            }
+            #img-voka-10 {
+                position: absolute;
+                top: 100%;
+                left: 100%;
+            }
+            #img-voka-11 {
+                position: absolute;
+                top: 54%;
+                left: 45%;
+            }
+            #img-voka-12 {
+                position: absolute;
+                top: 190%;
+                left:100%;
+            }
+            #img-voka-13 {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+            }
+            
+			
+			#overlay {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				-o-transform : scaleX(-1);
+				-webkit-transform : scaleX(-1);
+				transform : scaleX(-1);
+				-ms-filter : fliph; /*IE*/
+				filter : fliph; /*IE*/
+
+				width : 600px;
+				height : 450px;
+			}
+
+			#videoel {
+				-o-transform : scaleX(-1);
+				-webkit-transform : scaleX(-1);
+				transform : scaleX(-1);
+				-ms-filter : fliph; /*IE*/
+				filter : fliph; /*IE*/
+
+				width : 600px;
+				height : 450px;
+			}
+			
+			#container {
+				/*position : relative;
+				width : 370px;
+				margin : 0px auto;*/
+				left: 30px;
+    			position: absolute;
+    			top: 800px;
+			}
+			
+			#realpageVoka {
+			    display:block;
+				margin-top : 50px;
+				margin-left : auto;
+				margin-right : auto;
+				max-width: 600px;
+			}
+			#ismobileVoka {
+			    display:block;
+			}
+			
+			#sketch, #filter {
+				display: none;
+			}
+			
+			h2 {
+				font-weight : 400;
+			}
+			
+			.btn {
+				font-family: 'Lato';
+				font-size: 16px;
+			}
+
+			#controls {
+				position: absolute;
+    			right: 600px;
+    			text-align: center;
+    			top: 1300px;
+			}
+
+			#emotion_container {
+				position: absolute;
+    			top: 1200px;
+    			width: 600px;
+			}
+
+			#emotion_icons {
+				height: 50px;
+				padding-left: 40px;
+			}
+
+			.emotion_icon {
+				width : 80px;
+				height : 80px;
+				margin-top: 5px;
+				/*margin-left : 13px;*/
+				margin-left : 35px;
+			}
+
+			#emotion_chart, #emotion_icons {
+				margin: 0 auto;
+				width : 400px;
+			}
+
+			#icon1, #icon2, #icon3, #icon4, #icon5, #icon6 {
+				visibility : hidden;
+			}
+
+			/* d3 */
+			.bar {
+				fill : steelblue;
+				fill-opacity : .9;
+			}
+			#record_button {
+				display: none;
+				margin-right: 100px
+			}
+			#countdown {
+				display: none;
+			}
+
+			/*estilos para el posicionamiento del texto*/
+			#voca-titulo{
+				position: absolute;
+				top: 3px;
+				right: 20px;
+			}
+
+			#voca-instruccionestitulo{
+				position: absolute;
+				left: 700px;
+				font-size: 70px;
+			}
+
+			#voca-amigx1{
+				margin-left: 80px;
+			}
+
+			#voca-amigx2{
+				position: absolute;
+				right: 30px;
+			}
+
+			#voca-amigx3{
+				position: absolute;
+				top: 600px;
+			}
+
+			#voca-amigx4{
+				position: absolute;
+				top: 640px;
+				left: 50px;
+			}
+
+			#voca-amigx5{
+				position: absolute;
+				top: 800px;
+				left: 800px;
+			}
+
+			#voca-amigx6{
+				position: absolute;
+				top: 1300px;
+				left: 1000px;
+			}
+			
+			#voca-amigx7{
+    			position: absolute;
+                top: 500px;
+                left: 100px;
+			}
+			
+		</style>
+		
+		<script>
+            
+			// getUserMedia only works over https in Chrome 47+, so we redirect to https. Also notify user if running from file.
+			if (window.location.protocol == "file:") {
+				alert("You seem to be running this example directly from a file. Note that these examples only work when served from a server or localhost due to canvas cross-domain restrictions.");
+			} else if (window.location.hostname !== "localhost" && window.location.protocol !== "https:"){
+				window.location.protocol = "https";
+			}
+		</script>
+		
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114029730-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-114029730-1');
+        </script>
+
+	</head>
+	<body>
+	    <div id="loadingVoka"></div>
+	    
+		<script src="../../lib/jQuery-3.3.1.js"></script>
+		<script>
+            //preloading gif https://stackoverflow.com/questions/22131821/how-can-i-display-a-loading-gif-until-an-entire-html-page-has-been-loaded -->
+            $(window).ready(function() {
+                $('#loadingVoka').hide();
+            });
+        </script>    
+		<script src="js/libs/timer.jquery.js"></script>		
+
+		<script src="js/libs/utils.js"></script>
+		<script src="clmtrackr.min.js"></script>
+		<script src="models/model_pca_20_svm.min.js"></script>
+		<script src="js/libs/Stats.js"></script>
+		<script src="js/libs/d3.min.js"></script>
+		<script src="js/emotion_classifier.js"></script>
+		<script src="js/emotionmodel.js"></script>
+	    <!-- preloading gifhttps://stackoverflow.com/questions/22131821/how-can-i-display-a-loading-gif-until-an-entire-html-page-has-been-loaded -->
+	    
+	    <!-- https://elrumordelaluz.github.io/csshake/ 
+        <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">-->
+        <link rel="stylesheet" type="text/css" href="../../css/cssshake/csshake.min.css">
+		<script>
+		    
+            //https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
+            var isMobile = false; //initiate as false
+            // device detection
+            if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
+                || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) isMobile = true;
+            
+            
+
+		</script>
+        <div id="ismobileVoka">
+            jajajaja <br><br><br><br><br> jajajahaj
+            <br>
+            jaahjajjajaj<br><br>jejahajaj
+        </div>
+		<div id="realpageVoka">
+		    
+		<div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-1">
+         <img src="media/img/Goldn_Puppyrunning.gif" alt="Smiley face"> 
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-2">
+                 <img src="media/img/cutepuppyextraenjoy.gif" alt="Smiley face"> 
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-3">
+                 <img src="media/img/flypuppy.gif" alt="Smiley face"> 
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-4">
+                 <img src="media/img/labpuppywalking.gif" alt="Smiley face">  
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-5">
+                 <img src="media/img/puppiesblink.gif" alt="Smiley face"> 
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-6">
+                 <img src="media/img/puppy_car_large1.gif" alt="Smiley face"> 
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-7">
+                 <img src="media/img/Puppy_Email.gif" alt="Smiley face"> 
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-8">
+                 <img src="media/img/puppy.gif" alt="Smiley face"> 
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-9">
+                 <img src="media/img/puppyalexis.gif" alt="Smiley face"> 
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-10">
+                 <img src="media/img/puppylove.gif" alt="Smiley face">  
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-11">
+                 <img src="media/img/puppyrun.gif" alt="Smiley face">  
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-12">
+                 <img src="media/img/PuppyShoewinksml.gif" alt="Smiley face"> 
+        </div>
+        <div class="shake-crazy  shake-constant shake-constant--hover" id="img-voka-13">
+                 <img src="media/img/tamulahpuppy.gif" alt="Smiley face"> 
+        </div>
+		    
+		    
+			<div id="voca-titulo">
+				<h2>AVRI LA VOKITA:(</h2>
+			</div>
+			<div id="voca-materiales">
+				<h4>MATERIALES NECESARIOS:
+				UNA COMPUTADORA CON INTERNET <br> 
+				CAMARA WEB Y PARLANTES PARA REPRODUCIR SONIDO A BUEN VOLUMEN <br>
+				AMBIENTE ILUMINADO <br>
+				1CELULAR QUE FILME
+				</h4>
+			</div>
+			<div id="voca-instrucciones">
+					<div id="voca-instruccionestitulo">INSTRUCCIONES</div><br>
+					hace click en "click para arrancar" mas abajo en la pantalla y acomoda la cara para que te la detecte bien la camara 
+				<ul>
+                    <li id="voca-amigx1">
+                        tenes que abrir la voca y superar el 0.6 del "medidor" <br>
+					una vez superado ese nivel, va a aparecer un boton q te aviva paraque grabes y un contador que arranca en 18 minutos 40 segundos <br>
+                    </li>
+                    <li id="voca-amigx2">
+                        si cerras un poco la boca y baja el medidor, se reinicia el contador y tienen que empezar de vuelta<br>
+                    </li>    
+                    <li id="voca-amigx3">
+                       						Antes de empezar dale click este disquito <a href="https://www.youtube.com/watch?v=ZVJaU5jzGTg" target="_blank">acá</a>
+ pa amenizar
+                    </li>    
+					<li id="voca-amigx4">
+                    tenes que grabarte o que alguien mas te grabe durante los 18 minutos y pico que dura el contador, enfocandote la boka, pero principalmente que se vea al contador arrancar y terminar en 0, hay un premio muy groso por esto, una locura
+					</li>
+					<li id="voca-amigx5">
+						cuando tengas el video filmado manda un mail a 666@bebeto.pizza y aguarda por instrucciones
+					</li>
+					<li id="voca-amigx6">
+						hay un premio importante, q me va a salir guita, posta, 100x100real
+					</li>
+					<li id="voca-amigx7">
+						ESTO PUEDE NO FUNCIONAR EN TU COMPU, ASI QUE NO TE SIENTAS SOLX;(
+					</li>
+				</ul>
+			</div>
+			<div id="container">
+				<video id="videoel" width="400" height="300" preload="auto" loop>
+				</video>
+				<canvas id="overlay" width="400" height="300"></canvas>
+			</div>
+			<canvas id="sketch" width="400" height="300"></canvas>
+			<div id="emotion_container">
+				<div id="emotion_icons">
+					<img class="emotion_icon" id="icon1" src="media/franck_04117.jpeg">
+					<img class="emotion_icon" id="icon2" src="./media/icon_sad.png">
+					<img class="emotion_icon" id="icon3" src="./media/icon_surprised.png">
+					<img class="emotion_icon" id="icon4" src="./media/icon_happy.png">
+				</div>
+				<div id='emotion_chart'></div>
+			</div>
+			<div id="controls">
+				<div id="timerDiv"></div>
+				<input class="btn" id="record_button" type="button" value="DALE DALE GRABA GRABA DALE DALE">
+				<input class="btn" type="button" value="hace click en 'permitir' wach" disabled="disabled" onclick="startVideo()" id="startbutton">
+			</div>
+			<script>
+				var vid = document.getElementById('videoel');
+				var overlay = document.getElementById('overlay');
+				var overlayCC = overlay.getContext('2d');
+
+				//contador plugin de jquery http://jquerytimer.com/
+
+				function startt() {
+					$('#timerDiv').timer({
+					    countdown: true,
+					    duration: '18m40s',    	// This will start the countdown from 3 mins 40 seconds
+					    callback: function() {	// This will execute after the duration has elapsed
+					    	console.log('Time up!');
+					    }
+					});
+				}
+
+				function restartt() {
+					$("#timerDiv").timer('remove');  //leaves the display intact
+				}
+
+				//fin de contador
+				
+				/********** check and set up video/webcam **********/
+
+				function enablestart() {
+					var startbutton = document.getElementById('startbutton');
+					startbutton.value = "click para arrancar";
+					startbutton.disabled = null;
+				}
+				
+				/*var insertAltVideo = function(video) {
+					if (supports_video()) {
+						if (supports_ogg_theora_video()) {
+							video.src = "./media/cap12_edit.ogv";
+						} else if (supports_h264_baseline_video()) {
+							video.src = "./media/cap12_edit.mp4";
+						} else {
+							return false;
+						}
+						//video.play();
+						return true;
+					} else return false;
+				}*/
+				navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+				window.URL = window.URL || window.webkitURL || window.msURL || window.mozURL;
+
+				// check for camerasupport
+				if (navigator.getUserMedia) {
+					// set up stream
+					
+					var videoSelector = {video : true};
+					if (window.navigator.appVersion.match(/Chrome\/(.*?) /)) {
+						var chromeVersion = parseInt(window.navigator.appVersion.match(/Chrome\/(\d+)\./)[1], 10);
+						if (chromeVersion < 20) {
+							videoSelector = "video";
+						}
+					};
+				
+					navigator.getUserMedia(videoSelector, function( stream ) {
+						if (vid.mozCaptureStream) {
+							vid.mozSrcObject = stream;
+						} else {
+							vid.src = (window.URL && window.URL.createObjectURL(stream)) || stream;
+						}
+						vid.play();
+					}, function() {
+						//insertAltVideo(vid);
+						//alert("There was some problem trying to fetch video from your webcam. If you have a webcam, please make sure to accept when the browser asks for access to your webcam");
+						alert("huvo un problemita tratando de grabar con tu cam. si tenes webkam asegurate de aceptar cuando la compu te pregunte, dale? y sino es porque tu compu es basuura o estas usando celu jajajaj :(");
+					});
+				} else {
+					//insertAltVideo(vid);
+					//alert("This demo depends on getUserMedia, which your browser does not seem to support. :(");
+					alert("esta cosa depende de getUserMedia, que vendria a cer algo que ni vale la pena explicar pero q tu navegador no soporta, proba con otro, uno como la jente");
+				}
+
+				vid.addEventListener('canplay', enablestart, false);
+				
+				/*********** setup of emotion detection *************/
+
+				// set eigenvector 9 and 11 to not be regularized. This is to better detect motion of the eyebrows
+				pModel.shapeModel.nonRegularizedVectors.push(9);
+				pModel.shapeModel.nonRegularizedVectors.push(11);
+
+				var ctrack = new clm.tracker({useWebGL : true});
+				ctrack.init(pModel);
+
+				function startVideo() {
+					// start video
+					vid.play();
+					// start tracking
+					ctrack.start(vid);
+					// start loop to draw face
+					drawLoop();
+
+					//inicia el contador
+					startt();
+					
+					//se esconde el boton de 'hace click para arrancar'
+					$('#startbutton').css({'display':'none'});
+				}
+				
+				function drawLoop() {
+					requestAnimFrame(drawLoop);
+					overlayCC.clearRect(0, 0, 400, 300);
+					//psrElement.innerHTML = "score :" + ctrack.getScore().toFixed(4);
+					if (ctrack.getCurrentPosition()) {
+						ctrack.draw(overlay);
+					}
+					var cp = ctrack.getCurrentParameters();
+					
+					var er = ec.meanPredict(cp);
+					if (er) {
+						updateData(er);
+						for (var i = 0;i < er.length;i++) {
+							if (er[i].value > 0.6) {
+								document.getElementById('icon'+(i+1)).style.visibility = 'visible';
+								document.getElementById("record_button").style.display = "inline";
+								document.getElementById("timerDiv").style.display = "inline";
+								startt();
+							} else {
+								document.getElementById('icon'+(i+1)).style.visibility = 'hidden';
+								document.getElementById("record_button").style.display = "none"; 
+								document.getElementById("timerDiv").style.display = "none";
+								restartt();
+							}
+						}
+					}
+				}
+				
+				delete emotionModel['disgusted'];
+				delete emotionModel['fear'];
+				var ec = new emotionClassifier();
+				ec.init(emotionModel);
+				var emotionData = ec.getBlank();	
+				
+				/************ d3 code for barchart *****************/
+
+				var margin = {top : 20, right : 20, bottom : 10, left : 40},
+					width = 400 - margin.left - margin.right,
+					height = 100 - margin.top - margin.bottom;
+
+				var barWidth = 30;
+
+				var formatPercent = d3.format(".0%");
+				
+				var x = d3.scale.linear()
+					.domain([0, ec.getEmotions().length]).range([margin.left, width+margin.left]);
+
+				var y = d3.scale.linear()
+					.domain([0,1]).range([0, height]);
+
+				var svg = d3.select("#emotion_chart").append("svg")
+					.attr("width", width + margin.left + margin.right)
+					.attr("height", height + margin.top + margin.bottom)
+				
+				svg.selectAll("rect").
+				  data(emotionData).
+				  enter().
+				  append("svg:rect").
+				  attr("x", function(datum, index) { return x(index); }).
+				  attr("y", function(datum) { return height - y(datum.value); }).
+				  attr("height", function(datum) { return y(datum.value); }).
+				  attr("width", barWidth).
+				  attr("fill", "#2d578b");
+
+				svg.selectAll("text.labels").
+				  data(emotionData).
+				  enter().
+				  append("svg:text").
+				  attr("x", function(datum, index) { return x(index) + barWidth; }).
+				  attr("y", function(datum) { return height - y(datum.value); }).
+				  attr("dx", -barWidth/2).
+				  attr("dy", "1.2em").
+				  attr("text-anchor", "middle").
+				  text(function(datum) { return datum.value;}).
+				  attr("fill", "white").
+				  attr("class", "labels");
+				
+				svg.selectAll("text.yAxis").
+				  data(emotionData).
+				  enter().append("svg:text").
+				  attr("x", function(datum, index) { return x(index) + barWidth; }).
+				  attr("y", height).
+				  attr("dx", -barWidth/2).
+				  attr("text-anchor", "middle").
+				  attr("style", "font-size: 12").
+				  text(function(datum) { return datum.emotion;}).
+				  attr("transform", "translate(0, 18)").
+				  attr("class", "yAxis");
+
+				function updateData(data) {
+					// update
+					var rects = svg.selectAll("rect")
+						.data(data)
+						.attr("y", function(datum) { return height - y(datum.value); })
+						.attr("height", function(datum) { return y(datum.value); });
+					var texts = svg.selectAll("text.labels")
+						.data(data)
+						.attr("y", function(datum) { return height - y(datum.value); })
+						.text(function(datum) { return datum.value.toFixed(1);});
+
+					// enter 
+					rects.enter().append("svg:rect");
+					texts.enter().append("svg:text");
+
+					// exit
+					rects.exit().remove();
+					texts.exit().remove();
+				}
+
+				/******** stats ********/
+
+				stats = new Stats();
+				stats.domElement.style.position = 'absolute';
+				stats.domElement.style.top = '0px';
+				document.getElementById('container').appendChild( stats.domElement );
+
+				// update stats on every iteration
+				document.addEventListener('clmtrackrIteration', function(event) {
+					stats.update();
+				}, false);
+				
+			//funcion para mostrar el div dependiendo del dispositivo de entrada
+            if (isMobile == true) {
+              //$("realpage").hide();
+              $('#realpageVoka').css({'display':'none'});
+             // $("#realpageVoka").css("display","none");
+              $("ismobileVoka").show();
+            }
+            else {
+              //$("ismobile").hide();
+              //$("#ismobileVoka").css("display","none");
+              $('#ismobileVoka').css({'display':'none'});
+              $("realpageVoka").show();
+            }
+				
+			</script>
+		</div>
+		<script>
+            ga('send', 'pageview', location.pathname);
+        </script>
+	</body>
+</html>

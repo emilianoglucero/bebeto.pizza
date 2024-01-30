@@ -1,0 +1,80 @@
+[27-Jan-2018 20:38:41 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[28-Jan-2018 06:32:28 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[28-Jan-2018 09:10:29 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[28-Jan-2018 20:10:49 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[28-Jan-2018 23:22:31 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[28-Jan-2018 23:22:31 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[29-Jan-2018 01:34:30 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[29-Jan-2018 01:35:26 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[29-Jan-2018 02:07:38 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'emilianoglucero'@'server199.web-hosting.com' (using password: YES)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=serv...', 'emilianoglucero', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[29-Jan-2018 17:09:41 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'emilianoglucero'@'server199.web-hosting.com' (using password: YES)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=serv...', 'emilianoglucero', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[29-Jan-2018 18:19:54 America/New_York] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'emilianoglucero'@'server199.web-hosting.com' (using password: YES)' in /home/bebeeeod/public_html/pages/dibuja/Conexion.php:13
+Stack trace:
+#0 /home/bebeeeod/public_html/pages/dibuja/Conexion.php(13): PDO->__construct('mysql:host=serv...', 'emilianoglucero', 'guachozxc14U')
+#1 /home/bebeeeod/public_html/pages/dibuja/dibujatealgolindo.php(3): Conexion->__construct()
+#2 {main}
+  thrown in /home/bebeeeod/public_html/pages/dibuja/Conexion.php on line 13
+[05-Feb-2018 19:04:42 America/New_York] PHP Notice:  Undefined index: author in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 8
+[05-Feb-2018 19:04:42 America/New_York] PHP Notice:  Undefined index: photo in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 9
+[05-Feb-2018 19:04:42 America/New_York] PHP Notice:  Undefined offset: 1 in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 10
+[05-Feb-2018 19:04:42 America/New_York] PHP Notice:  Undefined offset: 1 in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 11
+[05-Feb-2018 19:04:42 America/New_York] PHP Warning:  file_put_contents(/home/bebeeeod/public_html/public_html/pages/dibuja/photos/1517875482.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 16
+[05-Feb-2018 21:08:57 America/New_York] PHP Notice:  Undefined index: photo in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 9
+[05-Feb-2018 21:08:57 America/New_York] PHP Notice:  Undefined offset: 1 in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 10
+[05-Feb-2018 21:08:57 America/New_York] PHP Notice:  Undefined offset: 1 in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 11
+[05-Feb-2018 21:08:57 America/New_York] PHP Warning:  file_put_contents(/home/bebeeeod/public_html/public_html/pages/dibuja/photos/1517882937.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 16
+[05-Feb-2018 21:34:56 America/New_York] PHP Notice:  Undefined index: author in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 8
+[05-Feb-2018 21:34:56 America/New_York] PHP Notice:  Undefined index: photo in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 9
+[05-Feb-2018 21:34:56 America/New_York] PHP Notice:  Undefined offset: 1 in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 10
+[05-Feb-2018 21:34:56 America/New_York] PHP Notice:  Undefined offset: 1 in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 11
+[05-Feb-2018 21:34:56 America/New_York] PHP Warning:  file_put_contents(/home/bebeeeod/public_htmlpages/dibuja/photos/1517884496.png): failed to open stream: No such file or directory in /home/bebeeeod/public_html/pages/dibuja/upload.php on line 16

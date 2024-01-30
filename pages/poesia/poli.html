@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Poli Maria Mandinga - En todas sus facetas</title>
+    <meta name="description" content="letras afuera" />
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <!--<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>-->
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/1.5.1/aframe/build/aframe-ar.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.1.3/dist/aframe-particle-system-component.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>-->
+  </head>
+  <body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false"
+    renderer="colorManagement: true;">
+
+      <a-assets>
+        <!--<a-asset-item id="reloj" src="pages/poesia/models/reloj1/Analog Clock 1.gltf"></a-asset-item>
+        
+        <a-asset-item id="reloj" src="pages/ar/models/pizza/scene.gltf"></a-asset-item>
+        <a-asset-item id="reloj" src="pages/poesia/models/reloj5new/scene.gltf"></a-asset-item>-->
+        <a-asset-item id="reloj" src="pages/poesia/models/reloj-poli/scene.gltf"></a-asset-item>
+        <a-asset-item id="reloj1" src="pages/poesia/models/reloj-poli/scene.gltf"></a-asset-item>
+        <a-asset-item id="reloj2" src="pages/poesia/models/reloj-poli/scene.gltf"></a-asset-item>
+        <a-asset-item id="reloj3" src="pages/poesia/models/reloj-poli/scene.gltf"></a-asset-item>
+        <a-asset-item id="reloj4" src="pages/poesia/models/reloj-poli/scene.gltf"></a-asset-item>
+        
+
+      </a-assets>
+
+        <a-marker-camera preset="hiro">
+
+          <a-entity position="0 2.25 -15" particle-system="preset: rain; color: #f429ff"></a-entity>
+          <a-tube path="5 0 5, 5 0 -5, -5 0 -5" radius="0.5" material="color: red"></a-tube>
+          <!--<a-entity gltf-model="#reloj" scale="0.5 0.5 0.5" position="2 0 -4" rotation="150 90 -90"></a-entity>-->
+          <a-entity gltf-model="#reloj" scale="0.5 0.5 0.5" rotation="0 225 0" position="2 0 -4"></a-entity>
+          <a-entity gltf-model="#reloj1" scale="0.5 0.5 0.5" rotation="0 215 0" position="1.5 -1 -4"></a-entity>
+          <a-entity gltf-model="#reloj2" scale="0.5 0.5 0.5" rotation="0 235 0" position="1 -2 -4"></a-entity>
+          <!--<a-entity gltf-model="#reloj3" scale="0.5 0.5 0.5" rotation="0 245 0" position="0 1 -4"></a-entity>
+          <a-entity gltf-model="#reloj4" scale="0.5 0.5 0.5" rotation="0 230 0" position="-2 0 -4"></a-entity>-->
+          
+        
+          <a-entity position="0 3.10 0" scale="7.5 7.5 7.5" text="font: pages/poesia/yantramanavnew.fnt; align: center; value: En todas sus facetas"></a-entity>
+
+          <a-entity position="0 2.70 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff3d5a;  align: center; value: el hilito escurriéndose"></a-entity>
+          <a-entity position="0 2.45 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff3d5a;  align: center; value: o el golpe seco"></a-entity>
+          <a-entity position="0 2.20 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff3d5a;  align: center; value: en el medio de la cara."></a-entity>
+          <a-entity position="0 1.95 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff3d5a;  align: center; value: su paso silencioso de animal"></a-entity>
+          <a-entity position="0 1.70 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff3d5a; align: center; value: al acecho"></a-entity>
+          <a-entity position="0 1.45 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff3d5a; align: center; value: la tenacidad con que cava"></a-entity>
+          <a-entity position="0 1.20 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff3d5a; align: center; value: su huella permanente"></a-entity>
+          <a-entity position="0 0.95 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff3d5a; align: center; value: o su estrategia implacable:"></a-entity>
+          <a-entity position="0 0.70 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff3d5a; align: center; value: la espera"></a-entity>
+          <a-entity position="0 0.45 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff6179; align: center; value: el interior oscuro de su boca"></a-entity>
+          <a-entity position="0 0.20 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff6179; align: center; value: redonda interminable."></a-entity>
+          <a-entity position="0 0 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff6179; align: center; value: cuando lo pierdo,"></a-entity>
+          <a-entity position="0 -0.25 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff6179; align: center; value: sus uñas desprendiéndose"></a-entity>
+          <a-entity position="0 -0.50 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff6179; align: center; value: o sus dedos mustios lamiéndome"></a-entity>
+          <a-entity position="0 -0.75 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff6179; align: center; value: las plantas "></a-entity>
+          <a-entity position="0 -1 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt;color: #ff6179;  align: center; value: el gesto benevolente"></a-entity>
+          <a-entity position="0 -1.25 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff6179; align: center; value: que usa para tranquilizarme"></a-entity>
+          <a-entity position="0 -1.50 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff7a8f; align: center; value: el tendal de cosas rotas"></a-entity>
+          <a-entity position="0 -1.75 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff7a8f; align: center; value: la pausa"></a-entity>
+          <a-entity position="0 -2 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff7a8f; align: center; value: o sus paredes huecas que no"></a-entity>
+          <a-entity position="0 -2.25 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff7a8f; align: center; value: se llenan con nada"></a-entity>
+          <a-entity position="0 -2.50 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff7a8f; align: center; value: su reiteración"></a-entity>
+          <a-entity position="0 -2.75 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #ff7a8f; align: center; value: su agotamiento."></a-entity>
+          <a-entity position="0 -3.15 0" scale="6 6 6" text="font: pages/poesia/yantramanavnew.fnt; color: #f50a2f; align: center; letterSpacing: 1; value: lo que me asusta es el tiempo"></a-entity>
+
+          <a-entity position="0 -3.55 0" scale="5 5 5" text="font: pages/poesia/yantramanavnew.fnt; value:@poli_maria_mandinga"></a-entity>
+
+          <!--<a-entity position="0 1.8 2">
+            <a-entity camera look-controls wasd-controls></a-entity>
+          </a-entity>-->
+        </a-marker-camera>
+    </a-scene>
+  </body>
+</html>
