@@ -1,3 +1,5 @@
+<!-- https://github.com/donnikitos/vite-plugin-php -->
+
 <?php
     include_once 'Conexion.php';
     $conexion = new Conexion();
@@ -5,7 +7,7 @@
 <!doctype html>
 <html>
     <head>
-        <base href="https://bebeto.pizza/pages/zarandraca/elflacovsbeltran.php" />
+        <!-- <base href="https://bebeto.pizza/pages/zarandraca/elflacovsbeltran.php" /> -->
         <title>Σᄂ VIΛJΣ DΣ ZΛЯΛПDЯΛᄃΛ</title>
         <link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, user-scalable=no">

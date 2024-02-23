@@ -1,10 +1,6 @@
-<?php
-include_once 'Conexion.php';
-$conexion = new Conexion();
-?>
+
 <html>
 <head>
-    <base href="https://bebeto.pizza/pages/dibuja/dibujatealgolindo.php"/>
   <title>♤💣  𝓒ｏĹσŘㄖＥ𝒶 Ữη 𝐏𝔬𝓛𝓘тᶤ𝓬Ｏ  👍🐸</title>
   <link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon" />
   <meta charset="UTF-8">

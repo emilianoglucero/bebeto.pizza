@@ -2,7 +2,11 @@ const isCodeSandbox =
   "SANDBOX_URL" in process.env || "CODESANDBOX_HOST" in process.env;
 import { resolve } from "path";
 import { defineConfig } from "vite";
+
+import usePHP from "vite-plugin-php";
+
 export default defineConfig({
+  plugins: [usePHP()],
   root: "./",
   publicDir: "../static/",
   base: "./",
