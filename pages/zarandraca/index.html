@@ -1,9 +1,5 @@
 <!-- https://github.com/donnikitos/vite-plugin-php -->
 
-<?php
-    include_once 'Conexion.php';
-    $conexion = new Conexion();
-?>
 <!doctype html>
 <html>
     <head>
@@ -43,11 +39,7 @@
     <body>
         <div id="screen"></div>
             <div class="main-score">
-            <?php
-              include_once 'Score.php';
-              $score = new Score();
-              $score->mostrar($conexion->pdo);
-            ?>
+
             </div>
         <script src="phaser.min.js"></script>
         <script src="main.min.js"></script>
