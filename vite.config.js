@@ -3,8 +3,6 @@ const isCodeSandbox =
 import { resolve } from "path";
 import { defineConfig } from "vite";
 
-import usePHP from "vite-plugin-php";
-
 export default defineConfig({
   root: "./",
   publicDir: "../static/",
