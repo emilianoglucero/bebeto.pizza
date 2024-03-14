@@ -6,14 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite preview --port 8080",
     "deploy": "vercel --prod"
   },
   "devDependencies": {
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "vercel": "^33.5.5",
-    "vite-plugin-php": "^1.0.9"
+    "vercel": "^33.5.5"
   }
 }
