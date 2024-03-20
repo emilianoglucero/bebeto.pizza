@@ -1,16 +1,16 @@
 //variable para determinar si cumplio con elminimo para anotarse al marcador
 //var global = this; // in global scope.
 //var inserted;
-import watt from "./assets/watt.mp3";
-import jadeo from "./assets/jadeo.mp3";
-import aullido from "./assets/aullido.mp3";
+// import watt from "./assets/watt.mp3";
+// import jadeo from "./assets/jadeo.mp3";
+// import aullido from "./assets/aullido.mp3";
 
-import birdie from "./assets/birdie.png";
-import clouds from "./assets/clouds.png";
-import finger from "./assets/finger.png";
-import fence from "./assets/fence.png";
-import peron from "./assets/peron.mp3";
-import hurt from "./assets/hurt.wav";
+// import birdie from "./assets/birdie.png";
+// import clouds from "./assets/clouds.png";
+// import finger from "./assets/finger.png";
+// import fence from "./assets/fence.png";
+// import peron from "./assets/peron.mp3";
+// import hurt from "./assets/hurt.wav";
 
 var DEBUG = false;
 var SPEED = 690;
@@ -19,7 +19,11 @@ var FLAP = 620;
 var SPAWN_RATE = 1 / 1.2;
 var OPENING = 134;
 
-var myMake = [watt, jadeo, aullido];
+var myMake = [
+  "./assets/watt.mp3",
+  "./assets/jadeo.mp3",
+  "./assets/aullido.mp3",
+];
 var x = Math.floor(Math.random() * 3);
 var randomSound = myMake[x];
 
@@ -53,17 +57,17 @@ function main() {
   function preload() {
     var assets = {
       spritesheet: {
-        birdie: [birdie, 24, 24],
-        clouds: [clouds, 128, 64],
+        birdie: ["./assets/birdie.png", 24, 24],
+        clouds: ["./assets/clouds.png", 128, 64],
       },
       image: {
-        finger: [finger],
-        fence: [fence],
+        finger: ["./assets/finger.png"],
+        fence: ["./assets/fence.png"],
       },
       audio: {
         flap: ["assets/" + randomSound],
-        score: [peron],
-        hurt: [hurt],
+        score: ["./assets/peron.mp3"],
+        hurt: ["./assets/hurt.wav"],
       },
     };
     Object.keys(assets).forEach(function (type) {
