@@ -19,13 +19,10 @@ var FLAP = 620;
 var SPAWN_RATE = 1 / 1.2;
 var OPENING = 134;
 
-var myMake = [
-  "./assets/watt.mp3",
-  "./assets/jadeo.mp3",
-  "./assets/aullido.mp3",
-];
+var myMake = ["/watt.mp3", "/jadeo.mp3", "/aullido.mp3"];
 var x = Math.floor(Math.random() * 3);
 var randomSound = myMake[x];
+console.log(randomSound);
 
 WebFontConfig = {
   google: { families: ["Press+Start+2P::latin"] },
@@ -57,17 +54,17 @@ function main() {
   function preload() {
     var assets = {
       spritesheet: {
-        birdie: ["./assets/birdie.png", 24, 24],
-        clouds: ["./assets/clouds.png", 128, 64],
+        birdie: ["/birdie.png", 24, 24],
+        clouds: ["/clouds.png", 128, 64],
       },
       image: {
-        finger: ["./assets/finger.png"],
-        fence: ["./assets/fence.png"],
+        finger: ["/finger.png"],
+        fence: ["/fence.png"],
       },
       audio: {
-        flap: ["assets/" + randomSound],
-        score: ["./assets/peron.mp3"],
-        hurt: ["./assets/hurt.wav"],
+        flap: [randomSound],
+        score: ["/peron.mp3"],
+        hurt: ["/hurt.wav"],
       },
     };
     Object.keys(assets).forEach(function (type) {
@@ -311,7 +308,7 @@ function main() {
 
   function setGameOver() {
     gameOver = true;
-    instText.setText("TOCALO AL FLACO\nPARA PROBAR OTRA VEZ");
+    instText.setText("TOCALE LA CABEZA AL FLACO\nPARA PROBAR OTRA VEZ");
     instText.renderable = true;
     //var hiscore = window.localStorage.getItem('hiscore');
     //hiscore = hiscore ? hiscore : score;
